@@ -9,4 +9,10 @@ class Product extends Model
 {
     use HasFactory;
     protected $fillable = ['name', 'description', 'price', 'image'];
+
+
+    public function getImagePathAttribute(): string
+    {
+        return asset('images/products/' . $this->image);
+    }
 }
