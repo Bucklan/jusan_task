@@ -13,6 +13,9 @@ class Product extends Model
 
     public function getImagePathAttribute(): string
     {
+        if (preg_match("/\bhttp\w*/i",$this->image)){
+            return $this->image;
+        }
         return asset('images/products/' . $this->image);
     }
 }

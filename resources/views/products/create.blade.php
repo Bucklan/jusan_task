@@ -21,9 +21,15 @@
                 </div>
                 <div>
                     <label for="image" class="block text-sm font-medium text-gray-900 leading-6">Image</label>
-                    <input type="file" name="image" id="image" class="block rounded-md w-80 py-2 border-0 ring-1 ring-inset ring-gray-300 text-sm">
+                    <input type="file" class="block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-violet-50 file:text-violet-700
+      hover:file:bg-violet-100
+    "/>
                 </div>
-                <button class="bg-violet-700 text-white px-2 py-1 mt-3 text-md rounded-lg">Create</button>
+                <button class="bg-violet-700 hover:bg-violet-900 mt-2  text-white px-2 py-2 px-4 font-semibold border-0 text-sm rounded-full">Create</button>
             </form>
         </div>
     </section>
